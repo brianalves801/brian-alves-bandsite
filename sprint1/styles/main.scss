@@ -1,0 +1,42 @@
+@import "./partials/font";
+
+.container{
+    display: flex;
+    border: 2px solid red;
+}
+
+.bio{
+    border: 2px solid blue;
+    max-width: 70px;
+    padding-right: 56px;
+}
+
+.show {
+    border: 2px solid blue;
+    max-width: 70px;
+    padding-left: 56px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:hover {
+    border-bottom: 3px solid red;
+  }
+  
+a.active {
+    padding-bottom: 25px;
+    border-bottom: 3px solid red;
+  }
+
+
+
+@import "./partials/breakpoint";
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/mainContent";
