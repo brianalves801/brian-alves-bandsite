@@ -1,0 +1,20 @@
+/* media query for tablet */
+@mixin small {
+  @media only screen and (min-width: 320px) {
+    @content;
+  }
+}
+
+/* media query for landscape, medium pixel density desktops */
+@mixin medium {
+  @media only screen and (min-width: 768px) and (max-width: 1439px) {
+    @content;
+  }
+}
+
+/* meda query for high pixel density desktops */
+@mixin large {
+  @media only screen and (min-width: 1440px) {
+    @content;
+  }
+}
