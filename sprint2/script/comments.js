@@ -13,18 +13,18 @@ function createComment(name, comment) {
     createComment(comment[i].name, comment[i].comment)
 }
 
-let showsVenue = document.createElement('h2')
-showsVenue.innerHTML = 'Venue'
-showsDiv.appendChild(showsVenue);
+let commentName = document.createElement('h3')
+commentName.innerHTML = 'Name'
+commentContainer.appendChild(commentName);
 let showsVenueContext = document.createElement('p')
-showsVenueContext.innerHTML = shows[i].Venue;
-showsDiv.appendChild(showsVenueContext);
-showsVenue.classList.add('shows__header')
+showsVenueContext.innerHTML = comments[i].Name;
+// showsDiv.appendChild(showsVenueContext);
+// showsVenue.classList.add('shows__header')
 
-let showsLocation = document.createElement('h2')
-showsLocation.innerHTML = 'Location'
-showsDiv.appendChild(showsLocation)
-let showsLocationContext = document.createElement('p')
-showsLocationContext.innerHTML = shows[i].Location;
-showsDiv.appendChild(showsLocationContext);
-showsLocation.classList.add('shows__header')
+let commentsComment = document.createElement('h3')
+commentsComment.innerHTML = 'Comment'
+commentsContainer.appendChild(commentsComment)
+let commentsComment = document.createElement('p')
+commentsComment.innerHTML = comments[i].Comment;
+// showsDiv.appendChild(showsLocationContext);
+// showsLocation.classList.add('shows__header')
