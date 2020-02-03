@@ -11,6 +11,7 @@ let shows = [show1, show2, show3, show4, show5, show6]
 let i;
 for (i = 0; i < shows.length; i++) {
     let showsDiv = document.createElement('div')
+    showsDiv.classList.add('shows__div')
 
     let showsDate = document.createElement('h2')
 
@@ -42,6 +43,10 @@ for (i = 0; i < shows.length; i++) {
     showsButton.innerHTML = 'BUY TICKETS'
     showsDiv.appendChild(showsButton);
     showsButton.classList.add('shows__button')
+    let showsButtonHr = document.createElement("hr")
+    showsDiv.appendChild(showsButtonHr);
+    showsButtonHr.classList.add('shows__buttonhr')
+    
     showContainer.appendChild(showsDiv);
     
 }
