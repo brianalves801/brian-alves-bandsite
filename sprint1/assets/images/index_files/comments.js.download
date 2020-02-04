@@ -18,7 +18,7 @@ function createComment(name, comment) {
     commentPic.classList.add("comment__pic")
     commentContainerTwo.appendChild(commentPic)
     let commentName = document.createElement('h3')
-    // commentName.innerHTML = 'Name'
+    commentName.innerHTML = 'Name'
     commentContainerTwo.appendChild(commentName);
     let commentsNameComment = document.createElement('p')
     commentsNameComment.innerHTML = name;
@@ -28,7 +28,7 @@ function createComment(name, comment) {
 
 
     let commentsComment = document.createElement('h3')
-    // commentsComment.innerHTML = 'Comment'
+    commentsComment.innerHTML = 'Comment'
     commentContainerTwo.appendChild(commentsComment)
     let commentThree = document.createElement('p')
     commentThree.innerHTML = comment;

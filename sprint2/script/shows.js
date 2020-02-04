@@ -46,9 +46,26 @@ for (i = 0; i < shows.length; i++) {
     let showsButtonHr = document.createElement("hr")
     showsDiv.appendChild(showsButtonHr);
     showsButtonHr.classList.add('shows__buttonhr')
-    
+
     showContainer.appendChild(showsDiv);
-    
 }
+
+
+// var showsDateArray = [];
+// const showsDate= []
+// axios.get("https://project-1-api.herokuapp.com/showdates?api_key=ebe808ae-e0c8-4242-9247-b5a4cb1ea502") 
+//     .then(response => {
+//         console.log(response.data);
+//         loadShows(response.data);
+//         // try calling a function and passing the response.data to the new function\
+//         // the function could use the code you have above except use response.data to loop over
+//     });
+
+
+// function loadShows(showData){
+//     console.log({showData});
+//     // move your code that's above which is appending elements into this function block
+// }
+
 
 

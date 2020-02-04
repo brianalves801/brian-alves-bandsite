@@ -101,19 +101,20 @@
     height: 100px;
   }
 
+}
   .mainContent__pgphotos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-right: 16px;
 
     img {
       padding-bottom: 24px;
       height: 200px;
-      margin-right: 16px;
-      width: 288x;
+      margin-right: 32px;
+      width: 100%;
     }
   }
-}
 
 @include medium {
   .mainContent__about {
@@ -141,7 +142,7 @@
       }
     }
   }
-  .mainContent__pg {
+  .mainContent__pgphotos {
     padding-left: 24px;
 
     img {
@@ -200,7 +201,7 @@
     padding-left: 180px;
 
     img {
-      min-width: 344px;
+      // min-width: 344px;
       min-height: 193px;
       padding-bottom: 24px;
       padding-right: 6px;
@@ -220,180 +221,45 @@
 .mainContent__comments {
   display: inline-block;
   
+  // display: flex;
+  // flex-wrap: wrap;
 
-  .--comment {
+  #--comment {
     height: 100px;
     border-radius: 10px;
     width: 224px;
-    // float: right;
+    margin-left: 100%;
   }
 
-  .--name {
+  #--name {
     height: 60px;
     border-radius: 10px;
     width: 224px;
+    margin-left: 100%;
   }
   
-  .--button {
-    background-color: black;
-    width: 224px;
-    color: white;
-    border-radius: 7px;
-    height: 60px;
-  }
 }
+    #--button {
+      background-color: black;
+      width: 224px;
+      color: white;
+      border-radius: 7px;
+      height: 60px;
+      display: block;
+      margin-left: 100%;
+    }
 
-// .mainContent__hero {
-//   height: 183px;
-//   display: flex;
-//   color: blue; //left in bue for legibility reasons. white color code is below
-//   background-image: url("/sprint2/assets/images/soundwave.jpg");
-//   background-size: 100% 100%;
-//   background-repeat: no-repeat;
-//   align-items: center;
+    .mainContent__commentheader {
+      margin-left: 100%;
+      color: lightgray;
+    }
+    .comment__pic {
+      float: left;
+      box-sizing: border-box;
+      border: 50px solid grey;
+      color: grey;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
 
-// .mainContent__aboutpic {
-//   background-image: url("../assets/images/aboutpic.jpg");
-//   background-size: 100% 100%;
-//   padding-bottom: 24px;
-//   padding-top: 24px;
-//   height: 200px;
-//   margin-right: 16px;
-//   width: 288px;
-// }
-
-// .mainContent__pg {
-//   margin-left: 16px;
-//   display: flex;
-//   justify-content: flex-start;
-//   align-content: flex-start;
-//   flex-direction: column;
-//   margin-right: 16px;
-
-//   .mainContent__pgheader {
-//     font-family: AvenirNextBold;
-//     font-size: 24px;
-//     line-height: 32px;
-//     padding-bottom: 24px;
-//     height: 100px;
-//   }
-
-//   .mainContent__pgphotos {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-
-//     img {
-//       padding-bottom: 24px;
-//       height: 200px;
-//       margin-right: 16px;
-//       width: 100%;
-//     }
-//   }
-// }
-
-// @include medium {
-//   .mainContent__about {
-//     padding-left: 24px;
-
-//     .mainContent__aboutheader {
-//       font-family: AvenirNextBold;
-//       font-size: 60px;
-//       line-height: 68px;
-//       padding-bottom: 32px;
-//     }
-//     .mainContent__aboutpic {
-//       width: 720px;
-//       height: 362px;
-//     }
-//     .mainContent__abouttext {
-//       display: flex;
-//       font-size: 14px;
-//       line-height: 22px;
-//     }
-//     .mainContent__aboutsubheader {
-//       li {
-//         padding-right: 180px;
-//         font-size: 36px;
-//         line-height: 44px;
-//       }
-//     }
-//   }
-//   .mainContent__pg {
-//     margin-left: 24px;
-//     margin-right: 24px;
-
-//     img {
-//       width: 33.3%;
-//       height: 126px;
-//       padding-bottom: 24px;
-//       padding-right: 6px;
-//     }
-//     .mainContent__pgheader {
-//       font-size: 60px;
-//       line-height: 68px;
-//     }
-
-//     .mainContent__pgphotos {
-//       display: flex;
-//       flex-direction: row;
-//       justify-content: flex-start;
-//     }
-//   }
-// }
-
-// @include large {
-//   .mainContent__about {
-//     padding-left: 180px;
-
-//     .mainContent__aboutsubheader {
-//       li {
-//         padding-right: 180px;
-//         font-size: 36px;
-//         line-height: 44px;
-//       }
-//     }
-
-//     .mainContent__abouttext {
-//       display: flex;
-//       font-size: 14px;
-//       line-height: 22px;
-//       padding-right: 60px;
-//     }
-
-//     .mainContent__aboutheader {
-//       font-family: AvenirNextBold;
-//       font-size: 60px;
-//       line-height: 68px;
-//       padding-bottom: 48px;
-//     }
-
-//     .mainContent__aboutpic {
-//       min-width: 896px;
-//       min-height: 450px;
-//       padding-bottom: 48px;
-//     }
-//   }
-
-//   .mainContent__pg {
-//     margin-left: 180px;
-//     margin-right: 180px;
-
-//     img {
-//       min-width: 344px;
-//       min-height: 193px;
-//       padding-bottom: 24px;
-//       padding-right: 6px;
-//     }
-//     .mainContent__pgheader {
-//       font-size: 60px;
-//       line-height: 68px;
-//     }
-
-//     .mainContent__pgphotos {
-//       display: flex;
-//       flex-direction: row;
-//       justify-content: flex-start;
-//     }
-//   }
-// }
