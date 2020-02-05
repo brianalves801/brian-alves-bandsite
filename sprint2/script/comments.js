@@ -24,9 +24,6 @@ function createComment(name, comment) {
     commentsNameComment.innerHTML = name;
     commentContainerTwo.appendChild(commentsNameComment);
    
-    
-
-
     let commentsComment = document.createElement('h3')
     // commentsComment.innerHTML = 'Comment'
     commentContainerTwo.appendChild(commentsComment)

@@ -20,6 +20,12 @@
   }
 }
 
+.show__headergroup {
+  display: flex;
+}
+.shows__div {
+  width: 100%;
+}
 .show__heading {
   visibility: hidden;
 }
@@ -72,25 +78,25 @@
     margin-left: 24px;
     width: 100%;
   }
-      .show__heading {
-        visibility: visible;
-        display: flex;
-        text-transform: uppercase;
-        .show__headingone {
-          display: flex;
-          flex-basis: 24%;
-          color: lightgray;
-        }
-        .show__headingtwo {
-          display: flex;
-          flex-basis: 25%;
-          color: lightgray;
-        }
-        .show__headingthree {
-          display: flex;
-          color: lightgray;
-        }
-      }
+  .show__heading {
+    visibility: visible;
+    display: flex;
+    text-transform: uppercase;
+    .show__headingone {
+      display: flex;
+      flex-basis: 24%;
+      color: lightgray;
+    }
+    .show__headingtwo {
+      display: flex;
+      flex-basis: 25%;
+      color: lightgray;
+    }
+    .show__headingthree {
+      display: flex;
+      color: lightgray;
+    }
+  }
 
   .shows__date {
     display: flex;
@@ -121,7 +127,77 @@
   }
 
   .shows__button {
-    width: 25%;
+    width: 160px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 24px;
+  }
+}
+
+@include large {
+  .shows__hero {
+    min-height: 480px;
+    width: 100%;
+    min-width: 102%;
+  }
+  .show__headergroup {
+    display: flex;
+  }
+  .shows__head1 {
+    display: flex;
+  }
+  .shows__container {
+    margin-right: 180px;
+    margin-left: 180px;
+    width: 100%;
+  }
+  .show__heading {
+    visibility: visible;
+    display: flex;
+    text-transform: uppercase;
+    .show__headingone {
+      display: flex;
+      flex-basis: 24%;
+      color: lightgray;
+    }
+    .show__headingtwo {
+      display: flex;
+      flex-basis: 25%;
+      color: lightgray;
+    }
+    .show__headingthree {
+      display: flex;
+      color: lightgray;
+    }
+  }
+
+  .shows__date {
+    display: flex;
+    // padding-left: 25%;
+  }
+
+  p {
+    display: flex;
+    flex-basis: 25%;
+  }
+
+  .shows__header {
+    display: none;
+  }
+
+  .shows__div {
+    display: flex;
+    margin-left: 20%;
+    flex-basis: 25%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    box-sizing: border-box;
+    border-bottom: 2px solid gray;
+    width: 100%;
+  }
+
+  .shows__button {
+    width: 5%;
     padding: 10px;
     border-radius: 10px;
     margin-right: 24px;

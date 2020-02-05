@@ -8,8 +8,12 @@ let show5 = { Date: "Sat, Aug 12, 2019", Venue: "Hyatt Agency", Location: "San F
 let show6 = { Date: "Wed, Aug 11, 2019", Venue: "Pres Club", Location: "San Francisco, CA" }
 
 let shows = [show1, show2, show3, show4, show5, show6]
-let i;
-for (i = 0; i < shows.length; i++) {
+
+// function createShows ()
+// let i;
+// for (i = 0; i < shows.length; i++) 
+
+function createShows (showinfo){
     let showsDiv = document.createElement('div')
     showsDiv.classList.add('shows__div')
 
@@ -51,18 +55,20 @@ for (i = 0; i < shows.length; i++) {
 }
 
 
-// var showsDateArray = [];
-// const showsDate= []
-// axios.get("https://project-1-api.herokuapp.com/showdates?api_key=ebe808ae-e0c8-4242-9247-b5a4cb1ea502") 
-//     .then(response => {
-//         console.log(response.data);
-//         loadShows(response.data);
-//         // try calling a function and passing the response.data to the new function\
-//         // the function could use the code you have above except use response.data to loop over
-//     });
+var showsDateArray = [];
+const showsDate= []
+axios.get("https://project-1-api.herokuapp.com/showdates?api_key=ebe808ae-e0c8-4242-9247-b5a4cb1ea502") 
+    .then(response =>  {
+        console.log(response.data);
+        let loadShows= response.data;
+        for (i = 0; i < loadShows.length; i++)
+        // try calling a function and passing the response.data to the new function\
+        // the function could use the code you have above except use response.data to loop over
+    
+    createShows(loadShows[i]) })
 
 
-// function loadShows(showData){
+// function loadShows(showData){z
 //     console.log({showData});
 //     // move your code that's above which is appending elements into this function block
 // }

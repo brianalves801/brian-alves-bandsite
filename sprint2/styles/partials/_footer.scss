@@ -17,6 +17,7 @@
 
   .footer__icons img {
     padding-right: 20px;
+    padding-top: 50px;
   }
 
   .footer__text li {
@@ -50,6 +51,7 @@
     }
     
     .footer__header {
+      padding-top: 50px;
       padding-right: 50px;
       margin-left: 24px;
     }
@@ -91,6 +93,7 @@
   @include large {
 
     .right {
+      padding-top: 50px;
       display: inherit;
       float: right;
       padding-right: 180px;
@@ -98,6 +101,7 @@
     }
 
     .footer__header {
+      padding-top: 50px;
       padding-right: 50px;
       margin-left: 180px;
     }

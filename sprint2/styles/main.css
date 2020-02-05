@@ -150,6 +150,7 @@
 
 .footer .footer__icons img {
   padding-right: 20px;
+  padding-top: 50px;
 }
 
 .footer .footer__text li {
@@ -181,6 +182,7 @@
     display: inherit;
   }
   .footer .footer__header {
+    padding-top: 50px;
     padding-right: 50px;
     margin-left: 24px;
   }
@@ -215,12 +217,14 @@
 
 @media only screen and (min-width: 1440px) {
   .footer .right {
+    padding-top: 50px;
     display: inherit;
     float: right;
     padding-right: 180px;
     height: 24px font-size 24px;
   }
   .footer .footer__header {
+    padding-top: 50px;
     padding-right: 50px;
     margin-left: 180px;
   }
@@ -268,6 +272,16 @@
   margin-left: 40px;
   width: 60%;
   color: white;
+}
+
+.show__headergroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shows__div {
+  width: 100%;
 }
 
 .show__heading {
@@ -376,7 +390,94 @@
     width: 100%;
   }
   .shows__button {
-    width: 25%;
+    width: 160px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .shows__hero {
+    min-height: 480px;
+    width: 100%;
+    min-width: 102%;
+  }
+  .show__headergroup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .shows__head1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .shows__container {
+    margin-right: 180px;
+    margin-left: 180px;
+    width: 100%;
+  }
+  .show__heading {
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-transform: uppercase;
+  }
+  .show__heading .show__headingone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 24%;
+        flex-basis: 24%;
+    color: lightgray;
+  }
+  .show__heading .show__headingtwo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    color: lightgray;
+  }
+  .show__heading .show__headingthree {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: lightgray;
+  }
+  .shows__date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+  .shows__header {
+    display: none;
+  }
+  .shows__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 20%;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-bottom: 2px solid gray;
+    width: 100%;
+  }
+  .shows__button {
+    width: 5%;
     padding: 10px;
     border-radius: 10px;
     margin-right: 24px;
@@ -606,6 +707,7 @@
     padding-left: 180px;
   }
   .mainContent__pg img {
+    width: 30%;
     min-height: 193px;
     padding-bottom: 24px;
     padding-right: 6px;
