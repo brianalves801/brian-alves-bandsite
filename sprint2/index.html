@@ -1,162 +1,193 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="./styles/main.css" />
 
-<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-  <link rel="stylesheet" href="./styles/main.css" />
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="assets/logos/Logo-bandsite.png" />
+        </a>
+      </div>
+      <nav class="header__navigation">
+        <ul class="header__navigation-menu">
+          <li class="header__navigation-item header__navigation-item--active">
+            <a href="index.html">Biography</a>
+          </li>
+          <li class="header__navigation-item header__navigation-item--inactive">
+            <a href="shows.html">Shows</a>
+            <header__navigation-item">
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-</head>
-
-<body>
-
-  <header class="header">
-    <div class="header__logo">
-      <a href="index.html">
-        <img src="assets/logos/Logo-bandsite.png">
-      </a>
+    <div class="mainContent__hero">
+      <div class="mainContent__herotext">Gaspard Auge & Xavier de Rosnay</div>
     </div>
-    <nav class="header__navigation">
-      <ul class="header__navigation-menu">
-        <li class="header__navigation-item header__navigation-item--active"><a href="index.html">Biography</a></li>
-        <li class="header__navigation-item header__navigation-item--inactive"><a href="shows.html">Shows</a>
-          <header__navigation-item">
+
+    <div class="mainContent__about">
+      <div class="mainContent__aboutheader">
+        About The Musicians
+      </div>
+      <div class="mainContent__aboutpic"></div>
+
+      <ul class="mainContent__aboutsubheader">
+        <li>
+          "We are more comfortable with not fighting what comes naturally. Beore
+          we might have thought, "We need to be smarter than this"
+        </li>
+        <br />
+        <li class="=demi">- Xavier de Rosnary</li>
+        <br />
+        <li>Xavier de Rosnay & Gaspard Augè</li>
       </ul>
-    </nav>
-  </header>
 
-  <div class="mainContent__hero">
-
-    <div class="mainContent__herotext">Gaspard Auge & Xavier de Rosnay</div>
-  </div>
-
-  <div class="mainContent__about">
-    <div class="mainContent__aboutheader">
-      About The Musicians
+      <ul class="mainContent__abouttext">
+        <li>
+          Xavier De Ronsay and Gaspard Augè had a few mutual friends, who
+          happened to run a record labe, seeking tracks for compilation. With an
+          immediate connection, the pair decided to try their hand at making a
+          song. That's when they creates their breakout singe, We Are Your
+          Friends - a feel-good, funk-filled, instant anthem that lost the remis
+          contest, but won the attention of Pedro Winter, director of the newly
+          founded Ed Banger Records, who boasted Daft Punk as former clients.
+          One week later, they were in his office, signing that record deal
+        </li>
+        <br />
+        <li>
+          Xavier De Ronsay and Gaspard Augè had a few mutual friends, who
+          happened to run a record labe, seeking tracks for compilation. With an
+          immediate connection, the pair decided to try their hand at making a
+          song. That's when they creates their breakout singe, We Are Your
+          Friends - a feel-good, funk-filled, instant anthem that lost the remis
+          contest, but won the attention of Pedro Winter, director of the newly
+          founded Ed Banger Records, who boasted Daft Punk as former clients.
+          One week later, they were in his office, signing that record deal
+        </li>
+      </ul>
     </div>
-    <div class="mainContent__aboutpic">
 
+    <div class="mainContent__pg">
+      <div class="mainContent__pgheader">
+        Photo Gallery
+      </div>
+
+      <div class="mainContent__pgphotos">
+        <img src="./assets/images/Photo-gallery-1.jpg" />
+        <img src="./assets/images/Photo-gallery-2.jpg" />
+        <img src="./assets/images/Photo-gallery-3.jpg" />
+        <img src="./assets/images/Photo-gallery-4.jpg" />
+        <img src="./assets/images/Photo-gallery-5.jpg" />
+        <img src="./assets/images/Photo-gallery-6.jpg" />
+        <img src="./assets/images/Photo-gallery-7.jpg" />
+        <img src="./assets/images/Photo-gallery-8.jpg" />
+        <img src="./assets/images/Photo-gallery-9.jpg" />
+      </div>
     </div>
-
-    <ul class="mainContent__aboutsubheader">
-      <li>"We are more comfortable with not fighting what comes naturally. Beore we might have thought, "We need to be
-        smarter than this"</li>
+    <h1>Join the Conversation</h1>
+    <div class="mainContent__comments">
+      <h3 class="mainContent__commentheader">NAME</h3>
+      <div id="mainContent__commentsname">
+        <input id="--name" type="text" name="NAME" placeholder="NAME" />
+      </div>
       <br />
-      <li class="=demi">- Xavier de Rosnary</li>
       <br />
-      <li>Xavier de Rosnay & Gaspard Augè</li>
-    </ul>
-
-    <ul class="mainContent__abouttext">
-      <li>Xavier De Ronsay and Gaspard Augè had a few mutual friends, who happened to run a record labe, seeking tracks
-        for compilation. With an immediate connection, the pair decided to try their hand at making a song. That's when
-        they creates their breakout singe, We Are Your Friends - a feel-good, funk-filled, instant anthem that lost the
-        remis contest, but won the attention of Pedro Winter, director of the newly founded Ed Banger Records, who
-        boasted Daft Punk as former clients. One week later, they were in his office, signing that record deal</li>
+      <h3 class="mainContent__commentheader">COMMENT</h3>
+      <div id="mainContent__commentscomment">
+        <input
+          id="--comment"
+          type="text"
+          name="COMMENT"
+          placeholder="COMMENT"
+        />
+      </div>
       <br />
-      <li>Xavier De Ronsay and Gaspard Augè had a few mutual friends, who happened to run a record labe, seeking tracks
-        for compilation. With an immediate connection, the pair decided to try their hand at making a song. That's when
-        they creates their breakout singe, We Are Your Friends - a feel-good, funk-filled, instant anthem that lost the
-        remis contest, but won the attention of Pedro Winter, director of the newly founded Ed Banger Records, who
-        boasted Daft Punk as former clients. One week later, they were in his office, signing that record deal</li>
-    </ul>
-  </div>
-
-  <div class="mainContent__pg">
-    <div class="mainContent__pgheader">
-      Photo Gallery
-    </div>
-
-
-    <div class="mainContent__pgphotos">
-
-      <img src="./assets/images/Photo-gallery-1.jpg">
-      <img src="./assets/images/Photo-gallery-2.jpg">
-      <img src="./assets/images/Photo-gallery-3.jpg">
-      <img src="./assets/images/Photo-gallery-4.jpg">
-      <img src="./assets/images/Photo-gallery-5.jpg">
-      <img src="./assets/images/Photo-gallery-6.jpg">
-      <img src="./assets/images/Photo-gallery-7.jpg">
-      <img src="./assets/images/Photo-gallery-8.jpg">
-      <img src="./assets/images/Photo-gallery-9.jpg">
-    </div>
-  </div>
-  <h1>Join the Conversation</h1>
-  <div class=mainContent__comments>
-    <h3 class="mainContent__commentheader">NAME</h3>
-    <div id="mainContent__commentsname">
-      <input id="--name" type="text" name="NAME" value="NAME">
+      <br />
+      <div class="mainContent__commentsadd">
+        <input
+          id="--button"
+          type="button"
+          name="BUTTON"
+          placeholder="COMMENT"
+        />
+        <hr />
+      </div>
     </div>
     <br />
-    <br />
-    <h3 class="mainContent__commentheader">COMMENT</h3>
-    <div id="mainContent__commentscomment">
-      <input id="--comment" type="text" name="COMMENT" value="COMMENT">
-    </div>
-    <br />
-    <br />
-    <div class=mainContent__commentsadd>
-      <input id="--button" type="button" name="BUTTON" value="COMMENT">
+
+    <div id="comment__container">
       <hr />
     </div>
-  </div>
-  <br />
 
-  <div id="comment__container">
     <hr />
+    <footer class="footer">
+      <div class="footer__all">
+        <div class="footer__header left">
+          Get in Touch
+        </div>
 
-  </div>
-
-  <hr />
-  <footer class="footer">
-    <div class="footer__all">
-
-      <div class="footer__header left">
-        Get in Touch
+        <div class="footer__icons left">
+          <img src="assets/Icons/PNG/Icon-instagram.png" />
+          <img src="assets/Icons/PNG/Icon-facebook.png" />
+          <img src="assets/Icons/PNG/Icon-twitter.png" />
+        </div>
       </div>
 
-      <div class="footer__icons left">
-        <img src="assets/Icons/PNG/Icon-instagram.png">
-        <img src="assets/Icons/PNG/Icon-facebook.png">
-        <img src="assets/Icons/PNG/Icon-twitter.png">
+      <div class="footer__logo">
+        <img class="right" src="assets/logos/Logo-bandsite.png" />
       </div>
-    </div>
 
-    <div class="footer__logo">
-      <img class="right" src="assets/logos/Logo-bandsite.png">
-    </div>
+      <br />
+      <div class="footer__text">
+        <ul class="left">
+          <li>
+            Richard Rovener <br />
+            The Bees Knees Management
+          </li>
+          <li>
+            460 King Street West <br />
+            Toronto, Ontario M5V 1L7
+          </li>
+          <li>info@thebeesknees.com</li>
+        </ul>
 
-    <br />
-    <div class="footer__text">
-      <ul class="left">
-        <li>Richard Rovener <br /> The Bees Knees Management</li>
-        <li>460 King Street West <br /> Toronto, Ontario M5V 1L7</li>
-        <li>info@thebeesknees.com</li>
-      </ul>
+        <ul class="left">
+          <li>
+            Marsha Vlasic <br />
+            Artist Group International
+          </li>
+          <li>
+            Booking Agent for <br />
+            US/South America/Japan
+          </li>
+          <li>marsha.vlasic@artistgrp.com</li>
+        </ul>
 
-      <ul class="left">
-        <li>Marsha Vlasic <br /> Artist Group International</li>
-        <li>Booking Agent for <br /> US/South America/Japan</li>
-        <li>marsha.vlasic@artistgrp.com</li>
-      </ul>
+        <ul class="left">
+          <li>
+            Russel Warby <br />
+            William Morrir Entertainment
+          </li>
+          <li>
+            Booking Agent for <br />
+            UK/EU/AU
+          </li>
+          <li>RLW@wmeentertainment.com</li>
+        </ul>
+      </div>
 
-      <ul class="left">
-        <li>Russel Warby <br /> William Morrir Entertainment</li>
-        <li>Booking Agent for <br /> UK/EU/AU</li>
-        <li>RLW@wmeentertainment.com</li>
-      </ul>
-    </div>
-
-    <div class="footer__copyright">
-      <p>Copyright The Bees Knees &copy; 2018 </p>
-      <p class="arr">All Rights Reserved</p>
-    </div>
-
-    <script src="script/comments.js"></script>
-
-  </footer>
-</body>
-
+      <div class="footer__copyright">
+        <p>Copyright The Bees Knees &copy; 2018</p>
+        <p class="arr">All Rights Reserved</p>
+      </div>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="script/comments.js"></script>
+    </footer>
+  </body>
 </html>

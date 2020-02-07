@@ -32,10 +32,6 @@
 .shows__container {
   margin-left: 16px;
   margin-right: 16px;
-  // display: inline-block;
-  //     column-count: 5;
-  //   column-gap: 0px;
-  //   column-rule: 1px solid lightblue;
 }
 
 .shows__header {
@@ -62,10 +58,6 @@
   border: 1px solid lightgray;
   border-color: lightgray;
 }
-
-// .shows__div {
-//     display: flex;
-// }
 
 @include medium {
   .shows__hero {
@@ -113,9 +105,6 @@
   }
 
   .shows__div {
-    // float: right;
-    // display: flex;
-    // flex-direction: flex-end;
     display: flex;
     margin-right: 24px;
     flex-basis: 25%;
@@ -203,12 +192,3 @@
     margin-right: 24px;
   }
 }
-//   .shows__buttonhr {
-// display: flex;
-// flex-direction: row;
-//   }
-//   .mainContent__herotext {
-//     font-size: 60px;
-//     line-height: 68px;
-//     margin-left: 40px;
-//     width: 60%;
