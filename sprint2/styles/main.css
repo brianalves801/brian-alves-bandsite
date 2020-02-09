@@ -590,6 +590,10 @@
   }
 }
 
+.comment__clear {
+  clear: both;
+}
+
 .mainContent__about {
   margin-left: 16px;
   margin-right: 16px;
@@ -814,6 +818,10 @@
 .mainContent__commentheader {
   margin-left: 100%;
   color: lightgray;
+}
+
+.comment__container {
+  overflow: auto;
 }
 
 .comment__pic {

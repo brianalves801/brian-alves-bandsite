@@ -53,6 +53,10 @@ function createComment(name, comment) {
   commentThree.innerHTML = comment;
   commentContainerTwo.appendChild(commentThree);
 
+  let clearr = document.createElement("div");
+  clearr.classList.add("comment__clear");
+  commentContainerTwo.appendChild(clearr);
+
   cc.insertBefore(commentContainerTwo, cc.childNodes[0]);
 }
 
