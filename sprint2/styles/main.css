@@ -824,6 +824,12 @@
   overflow: auto;
 }
 
+.comment__namecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .comment__pic {
   float: left;
   -webkit-box-sizing: border-box;

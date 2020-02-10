@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+
+    <!-- Block__Element--modifier -->
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="assets/logos/Logo-bandsite.png">
+            </a>
+        </div>
+        <nav class="header__navigation">
+            <ul class="header__navigation-menu">
+                <li class="header__navigation-item header__navigation-item--inactive"><a href="index.html">Biography</a>
+                </li>
+                <li class="header__navigation-item header__navigation-item--active"><a href="shows.html">Shows</a></li
+                    class="header__navigation-item">
+            </ul>
+        </nav>
+    </header>
+
+    <div class="shows__hero">
+        <div class="shows__herotext">Waters of Nazareth <br />
+        x We Are your <br />
+        Friends x Phantom</div>
+        <div class="shows__song"><iframe scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/220461089&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+    </div>
+
+    <div class="show__headergroup">
+        <h1>Shows</h1>
+        <span class="show__linebreak"><br /></span>
+        <div class="show__heading">
+            <h3 class="show__headingone">Dates</h3>
+            <h3 class="show__headingtwo">Venue</h3>
+            <h3 class="show__headingthree">Location</h3>
+           
+        </div>
+    </div>
+
+    <div id="show__container" class="shows__container">
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer__all">
+
+            <div class="footer__header left">
+                Get in Touch
+            </div>
+
+            <div class="footer__icons left">
+                <img src="assets/Icons/PNG/Icon-instagram.png">
+                <img src="assets/Icons/PNG/Icon-facebook.png">
+                <img src="assets/Icons/PNG/Icon-twitter.png">
+            </div>
+        </div>
+
+        <div class="footer__logo">
+            <img class="right" src="assets/logos/Logo-bandsite.png">
+        </div>
+
+        <br />
+        <div class="footer__text">
+            <ul class="left">
+                <li>Richard Rovener <br /> The Bees Knees Management</li>
+                <li>460 King Street West <br /> Toronto, Ontario M5V 1L7</li>
+                <li>info@thebeesknees.com</li>
+            </ul>
+
+            <ul class="left">
+                <li>Marsha Vlasic <br /> Artist Group International</li>
+                <li>Booking Agent for <br /> US/South America/Japan</li>
+                <li>marsha.vlasic@artistgrp.com</li>
+            </ul>
+
+            <ul class="left">
+                <li>Russel Warby <br /> William Morrir Entertainment</li>
+                <li>Booking Agent for <br /> UK/EU/AU</li>
+                <li>RLW@wmeentertainment.com</li>
+            </ul>
+        </div>
+
+        <div class="footer__copyright">
+            <p>Copyright The Bees Knees &copy; 2018 </p>
+            <p class="arr">All Rights Reserved</p>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="script/shows.js"></script>
+    </footer>
+</body>
+
+</html>

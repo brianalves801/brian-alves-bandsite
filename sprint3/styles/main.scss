@@ -1,0 +1,14 @@
+@import "./partials/font";
+@import "./partials/breakpoint";
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/showsContent";
+@import "./partials/mainContent";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+}

@@ -31,21 +31,45 @@ document.getElementById("--button").addEventListener("click", function() {
     .then(response => {});
   createComment(
     document.getElementById("--name").value,
-    document.getElementById("--comment").value
+    document.getElementById("--comment").value,
+    new Date()
   );
 });
 
-function createComment(name, comment) {
+function createComment(name, comment, timestamp) {
   let commentContainerTwo = document.createElement("div");
   let cc = document.getElementById("comment__container");
   let commentPic = document.createElement("div");
   commentPic.classList.add("comment__pic");
   commentContainerTwo.appendChild(commentPic);
+  let commentNameContainer = document.createElement("div");
+  commentNameContainer.classList.add("comment__namecontainer");
   let commentName = document.createElement("h3");
-  commentContainerTwo.appendChild(commentName);
+  commentName.innerHTML = name;
+  let breakLine = document.createElement("hr");
+  breakLine.classList.add("comment__breakline");
+
+  //create timestamp
+  let commentTimestampdiv = document.createElement("div");
+  commentTimestampdiv.classList.add("comment__timestampwrapper");
+  let commentTimestamptext = document.createElement("p");
+  commentTimestamptext.classList.add("comment__timestamptext");
+  let timestampDate = new Date(timestamp);
+  var date = timestampDate.getDate();
+  var month = timestampDate.getMonth(); //Be careful! January is 0 not 1
+  var year = timestampDate.getFullYear();
+
+  var dateString = month + 1 + "/" + date + "/" + year;
+  commentTimestamptext.innerHTML = dateString;
+  commentTimestampdiv.appendChild(commentTimestamptext);
+  //commentContainerTwo.appendChild(commentTimestampdiv);
+
+  //create name
   let commentsNameComment = document.createElement("p");
   commentsNameComment.innerHTML = name;
-  commentContainerTwo.appendChild(commentsNameComment);
+  commentNameContainer.appendChild(commentName);
+  commentNameContainer.appendChild(commentTimestampdiv);
+  commentContainerTwo.appendChild(commentNameContainer);
 
   let commentsComment = document.createElement("h3");
   commentContainerTwo.appendChild(commentsComment);
@@ -56,6 +80,7 @@ function createComment(name, comment) {
   let clearr = document.createElement("div");
   clearr.classList.add("comment__clear");
   commentContainerTwo.appendChild(clearr);
+  commentContainerTwo.appendChild(breakLine);
 
   cc.insertBefore(commentContainerTwo, cc.childNodes[0]);
 }
@@ -68,5 +93,9 @@ axios
     console.log(response.data);
     let loadComments = response.data;
     for (i = 0; i < loadComments.length; i++)
-      createComment(loadComments[i].name, loadComments[i].comment);
+      createComment(
+        loadComments[i].name,
+        loadComments[i].comment,
+        loadComments[i].timestamp
+      );
   });

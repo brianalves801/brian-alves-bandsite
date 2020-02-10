@@ -256,6 +256,9 @@
 .comment__container {
   overflow: auto;
 }
+.comment__namecontainer {
+  display: flex;
+}
 .comment__pic {
   float: left;
   box-sizing: border-box;
